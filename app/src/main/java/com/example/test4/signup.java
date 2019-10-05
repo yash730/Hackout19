@@ -67,7 +67,7 @@ public class signup extends AppCompatActivity {
         FirebaseUser currentUser = auth.getCurrentUser();
         if (currentUser != null) {
             Toast.makeText(this, "Signed In as " + currentUser.getDisplayName(), Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, profile.class));
         }
     }
 
@@ -101,7 +101,7 @@ public class signup extends AppCompatActivity {
                             checkSession();
                             Log.d(TAG, "signInWithCredential:success");
                         } else {
-
+                            Toast.makeText(signup.this, "Error", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
