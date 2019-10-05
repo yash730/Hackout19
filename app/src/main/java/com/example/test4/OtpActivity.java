@@ -49,7 +49,9 @@ public class OtpActivity extends AppCompatActivity {
     }
     private void sendverificationcode(){
 
-        String phone
+        String phone = et1.getText().toString();
+
+        if
 
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
                 phoneNumber,        // Phone number to verify
