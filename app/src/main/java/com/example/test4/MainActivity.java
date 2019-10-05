@@ -14,19 +14,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        bt1 = findViewById(R.id.bt1);
-        t1 = findViewById(R.id.t1);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        bt1 = findViewById(R.id.bt1);
+        t1 = findViewById(R.id.t1);
     }
 
-
-    public void bt1(View view) {
-        Intent i = new Intent(getApplicationContext(),signup.class);
-        startActivity(i);
-    }
-
-    public void execute(View view) {
-
+    public void goToSignup(View view) {
+        startActivity(new Intent(this, signup.class));
     }
 }

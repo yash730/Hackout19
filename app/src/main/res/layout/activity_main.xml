@@ -15,7 +15,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="140dp"
         android:text="SIGN UP"
-        android:onClick="bt1"
+        android:onClick="goToSignup"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
