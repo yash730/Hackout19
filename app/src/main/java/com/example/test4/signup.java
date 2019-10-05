@@ -46,9 +46,12 @@ public class signup extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (auth.getCurrentUser() == null) {
+                    Toast.makeText(signup.this, "null", Toast.LENGTH_SHORT).show();
                     signIn();
-                } else {
-                    // go to Home
+                }
+                else {
+                    startActivity(new Intent(getApplicationContext(), profile.class));
+                    Toast.makeText(signup.this, "e;se", Toast.LENGTH_SHORT).show();
                 }
             }
         });
